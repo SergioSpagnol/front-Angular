@@ -17,16 +17,21 @@ export class AppComponent {
   ){ }
 
   sendMessage(){
-    this.contactService.addContact({
-      Name: this.name,
-      Email: this.email,
-      Subject: this.subject,
-      Message: this.message,
-    }).subscribe(() => {
-      this.name = ''
-      this.email = ''
-      this.subject = ''
-      this.message = ''
-    })
+    try {
+      this.contactService.addContact({
+        Name: this.name,
+        Email: this.email,
+        Subject: this.subject,
+        Menssage: this.message,
+      }).subscribe(() => {
+        this.name = ''
+        this.email = ''
+        this.subject = ''
+        this.message = ''
+      })
+    } catch (error) {
+      
+    }
+    
   }
 }
