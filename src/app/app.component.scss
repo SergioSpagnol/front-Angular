@@ -135,9 +135,9 @@
         background-image: url("../assets/imgs/avatar.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-position-x: -180px;
+        
         background-size: cover;
-        border-radius: 70% 50% 70% 45% / 70% 65% 55% 45%;
+        border-radius: 21% 79% 65% 35% / 40% 29% 71% 60%  ;
       }
 }
 
@@ -242,8 +242,12 @@
       width: 100%;
   
       a {
-        color: #FFF;
+        color: #38B6FF;
+        background-color: #021e27;
+        padding: 2px 4px;
+        border-radius: 5px;
         text-decoration: none;
+        opacity: 0.8;
       }
     }
   
@@ -252,19 +256,19 @@
       cursor: pointer;
     }
   
-    .box.blue {
+    .box.outdoor {
       background: rgb(56,182,255);
-      background: radial-gradient(circle, rgba(56,182,255,1) 0%, rgba(28,91,128,1) 100%);
+      background-image: url(../assets/imgs/outdoor.png);
     }
   
-    .box.green {
+    .box.treml {
       background: rgb(0,255,224);
-      background: radial-gradient(circle, rgba(0,255,224,1) 0%, rgba(0,128,112,1) 100%);
+      background-image: url(../assets/imgs/treml.png);
     }
   
-    .box.orange {
+    .box.edi {
       background: rgb(255,189,89);
-      background: radial-gradient(circle, rgba(255,189,89,1) 0%, rgba(128,95,45,1) 100%);
+      background-image: url(../assets/imgs/edi.png);
     }
   
     .box.red {
