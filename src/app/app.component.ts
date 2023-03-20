@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { ContactsService } from './services/contacts.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class AppComponent {
   message!: string;
 
   constructor(
-    private contactService: ContactsService
+    private contactService: ContactsService,
+    private toastService : ToastrService
   ){ }
 
   sendMessage(){
@@ -23,6 +25,7 @@ export class AppComponent {
       Subject: this.subject,
       Menssage: this.message,
     }).subscribe(() => {
+      this.toastService.success('Mensagem enviada','Sucesso')
       this.name = ''
       this.email = ''
       this.subject = ''
