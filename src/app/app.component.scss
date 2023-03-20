@@ -271,9 +271,19 @@
       background-image: url(../assets/imgs/edi.png);
     }
   
-    .box.red {
+    .box.front-angular {
       background: rgb(255,87,87);
-      background: radial-gradient(circle, rgba(255,87,87,1) 0%, rgba(128,44,44,1) 100%);
+      background-image: url(../assets/imgs/front.png);    
+    }
+
+    .box.api-portfolio {
+      background: rgb(255,87,87);
+      background-image: url(../assets/imgs/minimal.png);    
+    }
+
+    .box.api-sistarefas {
+      background: rgb(255,87,87);
+      background-image: url(../assets/imgs/crud.png);    
     }
   }
   
